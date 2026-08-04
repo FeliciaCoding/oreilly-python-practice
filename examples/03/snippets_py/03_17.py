@@ -46,14 +46,30 @@ Decimal('10.25') * Decimal('5.75')
 
 ### Calculating Compound Interest
 
-principal = Decimal('1000.00')
+from decimal import Decimal
 
-rate = Decimal('0.05')
+from decimal import Decimal
 
-for year in range(1, 11):
-    amount = principal * (1 + rate) ** year
-    print(f'{year:>2}{amount:>10.2f}   {amount}')
+while True:
+    principal = Decimal(input("Enter the original amount: "))
+    if principal <= 0:
+        print("principal cannot be below 1")
+        continue
 
+    rate = Decimal(input("Enter the interest rate: "))
+
+    while True:
+        years = int(input("Enter how many years: "))
+        if years < 0:
+            print("years cannot be negative")
+            continue
+        break
+
+    break
+
+for year in range(years + 1):
+    result = principal * (1 + rate) ** year
+    print(f'{year:<2} {result:<10.2f}')
 ### Formatting the Year and Amount on Deposit
 
 ### A Policy Issue: Half-Up Rounding vs. Banker's Rounding

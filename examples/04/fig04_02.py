@@ -47,6 +47,7 @@ while game_status == GameStatus.CONTINUE:
 # display "wins" or "loses" message
 print('Player wins' if game_status == GameStatus.WON else 'Player loses')
 
+
 ##########################################################################
 # (C) Copyright 1992-2026 by Deitel & Associates, Inc. and               #
 # Pearson Education, Inc. All Rights Reserved.                           #

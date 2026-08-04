@@ -7,23 +7,25 @@
 ### Checkpoint 3 Snippets
 
 # AverageTemperature.py — Fahrenheit average calculator with sentinel value 999
-print('Enter Fahrenheit temperatures one at a time.')
-
 total = 0
-count = 0
+counter = 0
 
-temp = int(input('Enter -212 to 212 (999 to quit): '))
+while tmp := int(input("enter integer Fahrenheit temperatures between -212 to 212 included : ")):
+    if tmp == 999:
+        break
+    elif tmp < -212 or tmp > 212:
+        print("invalid range, please choose the range between -212 to 212 included! ")
+    else: 
+        total += tmp 
+        counter += 1
+        print (f"temperature : {tmp}, counter : {counter}, total : {total} ")
 
-while temp != 999:
-    total += temp
-    count += 1
-    temp = int(input('Enter -212 to 212 (999 to quit): '))
+# display avg 
 
-if count > 0:
-    average = total / count
-    print(f'\nAverage temperature: {average:.2f}')
-else:
-    print('\nNo temperatures entered.')
+if counter > 0 : 
+    print( f" avage temperate : {total} / {counter} = {total/counter:.2f}")
+else: 
+    print("No termp entered!\nquite program")
 
 ##########################################################################
 # (C) Copyright 1992-2026 by Deitel & Associates, Inc. and               #

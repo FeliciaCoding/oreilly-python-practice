@@ -8,7 +8,7 @@ for count in range(2):
         print(f'{value} is even')
     else:
         print(f'{value} is odd')
-
+    print (f"count : {count}")
 ##########################################################################
 # (C) Copyright 1992-2026 by Deitel & Associates, Inc. and               #
 # Pearson Education, Inc. All Rights Reserved.                           #

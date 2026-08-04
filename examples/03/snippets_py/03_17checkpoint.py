@@ -1,7 +1,16 @@
 ## 3.17 Objects-Natural Case Study: Precise Monetary Calculations with Type Decimal
 
 ### Checkpoint 1 Snippets
+from decimal import Decimal
 
+tax = Decimal(0.0625)
+amount = Decimal(37.45)
+
+total = amount*(tax + 1)
+print (f'{total:.2f}\n{total}')
+
+
+"""
 from decimal import Decimal
 
 bill_total = Decimal('37.45') * Decimal('1.0625')
@@ -9,6 +18,8 @@ bill_total = Decimal('37.45') * Decimal('1.0625')
 print(f'Bill total with rounding: {bill_total:.2f}')
 
 print(f'Exact bill total: {bill_total}')
+
+"""
 
 ##########################################################################
 # (C) Copyright 1992-2026 by Deitel & Associates, Inc. and               #

@@ -4,29 +4,29 @@
 
 grades = [85, 93, 45, 89, 85]
 
-sum(grades) / len(grades)
+print(sum(grades) / len(grades))
 
 ### statistics Module Functions mean, median and mode
 
 import statistics
 
-statistics.mean(grades)
+print(statistics.mean(grades))
 
-statistics.median(grades)
+print(statistics.median(grades))
 
-statistics.mode(grades)
+print(statistics.mode(grades))
 
 ### Sorting a list to Confirm Its Median and Mode
 
-sorted(grades)
+print(sorted(grades))
 
 ### statistics Functions mode and Function multimode
 
 grades2 = [85, 93, 45, 89, 85, 93]
 
-statistics.mode(grades2)
+print(statistics.mode(grades2))
 
-statistics.multimode(grades2)
+print(statistics.multimode(grades2))
 
 ##########################################################################
 # (C) Copyright 1992-2026 by Deitel & Associates, Inc. and               #
