@@ -1,1 +1,6 @@
 .DS_Store
+
+examples/.vscode/*
+!examples/.vscode/launch.json
+!examples/.vscode/tasks.json
+!examples/.vscode/settings.json
