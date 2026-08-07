@@ -11,6 +11,7 @@ print("Examples: 'es_ES' (Spanish), 'ja_JP' (Japanese)")
 locale_input = input('Enter locale code: ').strip()
 
 # set locale for numeric and date/time output
+## locale -a : available locale names in Terminal
 locale.setlocale(locale.LC_NUMERIC, locale_input)
 locale.setlocale(locale.LC_TIME, locale_input)
 
@@ -75,3 +76,4 @@ In individual time units, you have been alive for:
 # consequential damages in connection with, or arising out of, the       #
 # furnishing, performance, or use of these programs.                     #
 ##########################################################################
+
